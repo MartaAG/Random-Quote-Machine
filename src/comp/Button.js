@@ -6,9 +6,9 @@ class Button extends React.Component {
     super(props);
     this.randomize = this.randomize.bind(this);
   }
-
+//function randomize takes props of function setIndex from parent and quotesLength and make random index
   randomize() {
-    return Math.floor(Math.random()*this.props.quotesLength)
+     this.props.setIndex(Math.floor(Math.random()*this.props.quotesLength))
   }
   render() {
     return (
