@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import FetchQuotes from './comp/FetchQuotes';
-import SocialMedia from './comp/SocialMedia'
 
 function App() {
   return (
@@ -10,7 +9,6 @@ function App() {
         Fetched text:
       </h1>
       <FetchQuotes/>
-      <SocialMedia />
     </div>
   );
 }

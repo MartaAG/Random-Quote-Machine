@@ -1,5 +1,7 @@
 import React from 'react';
 import Button from './Button.js'
+import SocialMedia from './SocialMedia.js'
+
 
 class FetchQuotes extends React.Component {
   constructor(props) {
@@ -19,7 +21,7 @@ class FetchQuotes extends React.Component {
     }).then(data => {
       let texts = data.quotes.map((q) => {
       return (
-      <p >{q.quote} - {q.author}</p>
+      `${q.quote} - ${q.author}`
       )
       })
       //changing state: state take an array of quotes
@@ -37,9 +39,9 @@ class FetchQuotes extends React.Component {
       setIndex={this.changeQuote}
       quotesLength={this.state.quotes.length}/>
       <div>
-        {this.state.quote}
+        <p>{this.state.quote}</p>
       </div>
-      <p ></p>
+      <SocialMedia quote={this.state.quote}/>
     </div>)
   }
 }
