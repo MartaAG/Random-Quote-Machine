@@ -17,7 +17,7 @@ class FetchQuotes extends React.Component {
     fetch('https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json').then(results => {
       return results.json();
       //iterating over array of quotes to show them all
-      //instead of jsonm we got strings
+      //instead of json we got strings
     }).then(data => {
       let texts = data.quotes.map((q) => {
       return (
@@ -28,7 +28,7 @@ class FetchQuotes extends React.Component {
       this.setState({quotes: texts});
 
     })
-
+    //lifting state up
   }
   changeQuote(quote) {
     this.setState({quote: this.state.quotes[quote]});

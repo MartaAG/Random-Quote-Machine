@@ -21,10 +21,10 @@ class SocialMedia extends React.Component {
       <div>
         <h2>Share it!</h2>
         <div>
-                 <a href={tumbrlUrl} target="_blank">
+                 <a href={tumbrlUrl} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faTumblr}/>
                  </a>
-                 <a href={twitterUrl} target="_blank">
+                 <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
                    <FontAwesomeIcon icon={faTwitter}/>
                  </a>
              </div>
