@@ -1,4 +1,5 @@
 import React from 'react';
+import './Button.css'
 
 
 class Button extends React.Component {
@@ -13,7 +14,10 @@ class Button extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this.randomize}>Random!</button>
+        <button
+        id="new-quote"
+        className="quoteButton"
+        onClick={this.randomize}>Generate!</button>
       </div>
     )
   }

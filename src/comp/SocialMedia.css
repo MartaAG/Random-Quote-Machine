@@ -1,0 +1,16 @@
+.social-media {
+  margin-top: 50px;
+  padding:10px;
+  /* border: solid 2px red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.share {
+  font-size: 48px;
+  color: #6c5ce7;
+  padding:15px;
+  /* border: solid 2px blue; */
+
+}

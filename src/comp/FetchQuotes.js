@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './Button.js'
 import SocialMedia from './SocialMedia.js'
+import './FetchQuote.css';
 
 
 class FetchQuotes extends React.Component {
@@ -20,28 +21,36 @@ class FetchQuotes extends React.Component {
       //instead of json we got strings
     }).then(data => {
       let texts = data.quotes.map((q) => {
-      return (
-      `${q.quote} - ${q.author}`
-      )
+        return (
+          {
+            quote: q.quote,
+            author: q.author
+          }
+        )
       })
       //changing state: state take an array of quotes
-      this.setState({quotes: texts});
+      this.setState({ quotes: texts });
 
     })
     //lifting state up
   }
   changeQuote(quote) {
-    this.setState({quote: this.state.quotes[quote]});
+    this.setState({ quote: this.state.quotes[quote] });
   }
   render() {
     return (<div>
-      <Button
-      setIndex={this.changeQuote}
-      quotesLength={this.state.quotes.length}/>
-      <div>
-        <p>{this.state.quote}</p>
+    
+      <div className="q-box">
+        <p
+          id="text"
+          className="mainQuote">{this.state.quote.quote}</p>
+        <p id="author">{this.state.quote.author}</p>
       </div>
-      <SocialMedia quote={this.state.quote}/>
+      <Button
+        setIndex={this.changeQuote}
+        quotesLength={this.state.quotes.length} />
+      <SocialMedia quote={this.state.quote} />
+
     </div>)
   }
 }

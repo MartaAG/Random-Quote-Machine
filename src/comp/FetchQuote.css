@@ -1,0 +1,24 @@
+.mainQuote {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 48px;
+  font-style: italic;
+  margin:10px;
+  padding:10px;
+  color:#6c5ce7;
+}
+
+#author {
+  font-family: 'Satisfy', cursive;
+   text-align: right;
+   font-size: 20px;
+   padding:10px;
+   margin:10px;
+
+}
+
+.q-box {
+  width: 800px;
+  background-color: white;
+  padding:10px;
+  border-radius: 10px;
+}

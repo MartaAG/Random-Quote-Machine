@@ -1,22 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Philosopher', sans-serif;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #fff3b1;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.Site-content {
+  flex: 1;
+
+}
+
+#quote-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.App > footer{
+  padding:10px;
+  margin:10px;
+}
+
+.App > h1 {
+  padding:10px;
+  margin-top: 100px;
 }
