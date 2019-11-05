@@ -30,6 +30,7 @@ class FetchQuotes extends React.Component {
       })
       //changing state: state take an array of quotes
       this.setState({ quotes: texts });
+      this.setState({quote: this.state.quotes[0]});
 
     })
     //lifting state up
@@ -39,7 +40,7 @@ class FetchQuotes extends React.Component {
   }
   render() {
     return (<div>
-    
+
       <div className="q-box">
         <p
           id="text"
