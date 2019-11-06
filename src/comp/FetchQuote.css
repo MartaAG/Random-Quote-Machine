@@ -16,9 +16,96 @@
 
 }
 
+#quote-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .q-box {
   width: 800px;
   background-color: white;
   padding:10px;
   border-radius: 10px;
+}
+
+.boxxxy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+  .q-box {
+    padding: 0;
+  }
+  .mainQuote {
+    font-size: 18px;
+    margin:0;
+    line-height: 30px
+  }
+  .box2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 500px) {
+  .q-box {
+    width:100%;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .mainQuote {
+    font-size: 20px;
+    line-height: 30px;
+    margin:10px;
+    padding:10px;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  .box2 {
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%
+  }
+  .mainQuote {
+    font-size: 20px;
+    line-height: 30px;
+    margin:10px;
+    padding:10px;
+  }
+  .q-box {
+    width:100%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 901px) {
+  .box2 {
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%
+  }
+  .mainQuote {
+    font-size: 25px;
+    line-height: 30px;
+    margin:10px;
+    padding:10px;
+  }
+  .q-box {
+    width:100%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
 }

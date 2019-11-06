@@ -39,7 +39,7 @@ class FetchQuotes extends React.Component {
     this.setState({ quote: this.state.quotes[quote] });
   }
   render() {
-    return (<div>
+    return (<div className="boxxxy">
 
       <div className="q-box">
         <p
@@ -47,10 +47,12 @@ class FetchQuotes extends React.Component {
           className="mainQuote">{this.state.quote.quote}</p>
         <p id="author">{this.state.quote.author}</p>
       </div>
+      <div className="box2">
       <Button
         setIndex={this.changeQuote}
         quotesLength={this.state.quotes.length} />
       <SocialMedia quote={this.state.quote} />
+      </div>
 
     </div>)
   }
