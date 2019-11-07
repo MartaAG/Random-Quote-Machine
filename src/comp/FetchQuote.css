@@ -40,6 +40,7 @@
 @media only screen and (max-width: 400px) {
   .q-box {
     padding: 0;
+    width: 100%;
   }
   .mainQuote {
     font-size: 18px;
@@ -66,7 +67,7 @@
   }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 800px) {
+@media only screen and (min-width: 501px) and (max-width: 730px) {
   .box2 {
     /* border: solid 1px red; */
     display: flex;
@@ -88,7 +89,7 @@
   }
 }
 
-@media only screen and (max-width: 901px) {
+@media only screen and (min-width: 731px) and (max-width: 1001px) {
   .box2 {
     /* border: solid 1px red; */
     display: flex;
@@ -104,7 +105,6 @@
     padding:10px;
   }
   .q-box {
-    width:100%;
     padding: 0;
     margin-bottom: 10px;
   }

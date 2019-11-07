@@ -15,7 +15,8 @@ class FetchQuotes extends React.Component {
   }
   componentDidMount() {
     //here is link to fetch data and to return it in json
-    fetch('https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json').then(results => {
+    let quoteLink = 'https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json'
+    fetch(quoteLink).then(results => {
       return results.json();
       //iterating over array of quotes to show them all
       //instead of json we got strings
@@ -39,6 +40,7 @@ class FetchQuotes extends React.Component {
     this.setState({ quote: this.state.quotes[quote] });
   }
   render() {
+    if(this.state.quote) {
     return (<div className="boxxxy">
 
       <div className="q-box">
@@ -54,7 +56,8 @@ class FetchQuotes extends React.Component {
       <SocialMedia quote={this.state.quote} />
       </div>
 
-    </div>)
+    </div>)}
+    else {throw new Error ('no quotes')}
   }
 }
 

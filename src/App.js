@@ -1,13 +1,16 @@
 import React from 'react';
 import './App.css';
 import FetchQuotes from './comp/FetchQuotes';
+import ErrorBoundary from './comp/ErrorBoundary'
 
 function App() {
   return (
     <div className="App">
-  
+
       <main className="Site-content" id="quote-box">
-      <FetchQuotes/>
+        <ErrorBoundary>
+          <FetchQuotes/>
+        </ErrorBoundary>
       </main>
       <footer className="footer">Random Quote Machine by
         <a
