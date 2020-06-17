@@ -15,6 +15,10 @@ Download or clone the project.  Run the terminal. Write npm install and then npm
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+### Dependencies
+
+The icons comes from awesome [react-fontawesome](https://github.com/FortAwesome/react-fontawesome#installation) project
+
 ## Structure
 ```
 App.js
